@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:25127405419:android:eb192bbf57372d0bda2e2e",
+        "mobilesdk_app_id": "1:25127405419:android:80e1fb00ffdbc505da2e2e",
         "android_client_info": {
-          "package_name": "com.tuktuk.app"
+          "package_name": "com.tuk.tuk.company.app"
         }
       },
       "oauth_client": [
@@ -30,6 +30,13 @@
             {
               "client_id": "25127405419-mbhvncnt528j4f0gimdfav8492e5chh9.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "25127405419-uekmv6c92p69jjseq5urmeapd57p8hh6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tuktuk.ios.app"
+              }
             }
           ]
         }

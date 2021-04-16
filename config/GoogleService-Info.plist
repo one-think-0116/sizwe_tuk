@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>25127405419-uekmv6c92p69jjseq5urmeapd57p8hh6.apps.googleusercontent.com</string>
+	<string>25127405419-vju4khmmtd04rn2rbsjm1jcudgt25ks4.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.25127405419-uekmv6c92p69jjseq5urmeapd57p8hh6</string>
+	<string>com.googleusercontent.apps.25127405419-vju4khmmtd04rn2rbsjm1jcudgt25ks4</string>
 	<key>API_KEY</key>
 	<string>AIzaSyB1crorOA3h6_Ag41Ji9HznwW3ImVDgoF4</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.tuktuk.ios.app</string>
+	<string>com.tuk.tuk.company.app</string>
 	<key>PROJECT_ID</key>
 	<string>tuk-tuk-e7419</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:25127405419:ios:95f2b1f45580c507da2e2e</string>
+	<string>1:25127405419:ios:b259d9f5abad5a3ada2e2e</string>
 	<key>DATABASE_URL</key>
 	<string>https://tuk-tuk-e7419-default-rtdb.firebaseio.com</string>
 </dict>
