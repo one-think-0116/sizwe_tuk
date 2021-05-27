@@ -1,5 +1,5 @@
-const PAYSTACK_PUBLIC_KEY = "pk_test_a02435f21c823daf324d75104dc3f2121e53097a";
-const PAYSTACK_SECRET_KEY = "sk_test_5d64fa07ffe78008867e8938949e8401a59c8077";
+const PAYSTACK_PUBLIC_KEY = "pk_live_eea7646a4456bf168bfd17d50f1e1ba15459993e";
+const PAYSTACK_SECRET_KEY = "sk_live_ed5151eb8277f92dbeb10085b601afb38dcb3f58";
 
 var paystack = require('paystack')(PAYSTACK_SECRET_KEY);
 const templateLib = require('./template');

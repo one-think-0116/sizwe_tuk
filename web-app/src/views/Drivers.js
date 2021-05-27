@@ -75,7 +75,10 @@ export default function Users() {
         sorting: true,
       }}
       editable={{
-        onRowAdd: newData =>
+        isEditable: newData => auth.info.profile.usertype === "admin",
+        isDeletable: newData => auth.info.profile.usertype === "admin",
+        onRowAdd: auth.info.profile.usertype === "admin"?
+        newData =>
         new Promise((resolve,reject) => {
           setTimeout(() => {
             checkUserExists(newData).then((res) => {
@@ -101,7 +104,8 @@ export default function Users() {
               }
             });
           }, 600);
-        }),
+        })
+        : undefined,
         onRowUpdate: (newData, oldData) =>
           new Promise(resolve => {
             setTimeout(() => {

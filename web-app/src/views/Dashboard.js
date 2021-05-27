@@ -94,18 +94,22 @@ const Dashboard = () => {
     return (
         bookinglistdata.loading || usersdata.loading ? <CircularLoading/> :
         <div>
-            <Typography variant="h4" style={{margin:"20px 0 0 15px"}}>{language.gross_earning}</Typography>
-            <Grid container direction="row" spacing={2}>
-                <Grid item xs>
-                    <DashboardCard title={language.today_text} image={require("../assets/img/money1.jpg")}>{ settings.symbol + ' ' + dailygross}</DashboardCard>
+            {auth.info.profile.usertype === "admin"?
+                <>
+                <Typography variant="h4" style={{margin:"20px 0 0 15px"}}>{language.gross_earning}</Typography>
+                <Grid container direction="row" spacing={2}>
+                    <Grid item xs>
+                        <DashboardCard title={language.today_text} image={require("../assets/img/money1.jpg")}>{ settings.symbol + ' ' + dailygross}</DashboardCard>
+                    </Grid>
+                    <Grid item xs>
+                        <DashboardCard title={language.this_month_text} image={require("../assets/img/money2.jpg")}>{ settings.symbol +' ' +  monthlygross}</DashboardCard>
+                    </Grid>
+                    <Grid item xs>
+                        <DashboardCard title={language.total} image={require("../assets/img/money3.jpg")}>{ settings.symbol +' ' +  totalgross}</DashboardCard>
+                    </Grid>
                 </Grid>
-                <Grid item xs>
-                    <DashboardCard title={language.this_month_text} image={require("../assets/img/money2.jpg")}>{ settings.symbol +' ' +  monthlygross}</DashboardCard>
-                </Grid>
-                <Grid item xs>
-                    <DashboardCard title={language.total} image={require("../assets/img/money3.jpg")}>{ settings.symbol +' ' +  totalgross}</DashboardCard>
-                </Grid>
-            </Grid>
+                </>
+                : null}
             { mylocation?
             <Paper style={{marginTop:'25px'}}>
                 <Typography variant="h4" style={{margin:"20px 0 0 15px"}}>{language.real_time_driver_section_text}</Typography>

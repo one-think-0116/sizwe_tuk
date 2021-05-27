@@ -502,5 +502,8 @@
     "percentage": "Percentage",
     "flat": "Flat",
     "ditanceTime": "Distance and Time",
-    "updatemobile" : "Please update you mobile number in profile"
+    "updatemobile" : "Please update you mobile number in profile",
+    "tuktuk_fees_comment" : "Tuk Tuk Fees",
+    "fleet_manager_fees_comment" : "Fleet Manager Fees",
+    "insurance_roads_fees_comment" : "Insurance & Road tax Fees"
 }

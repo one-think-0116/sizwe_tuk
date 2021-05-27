@@ -38,6 +38,9 @@ const BookingHistory = () => {
       { title: language.vehicle_no, field: 'vehicle_number' },  
       { title: language.trip_cost_driver_share, field: 'driver_share'},
       { title: language.convenience_fee, field: 'convenience_fees'},
+      { title: language.tuktuk_fees_comment, field: 'tuktuk_fees'},
+      { title: language.fleet_manager_fees_comment, field: 'fleet_manager_fees'},
+      { title: language.insurance_roads_fees_comment, field: 'insurance_road_fees'},
       { title: language.discount_ammount, field: 'discount'},      
       { title: language.Customer_paid, field: 'customer_paid'},
       { title: language.payment_mode, field: 'payment_mode'},
@@ -89,6 +92,7 @@ const BookingHistory = () => {
         rowData => ({
           icon: 'cancel',
           tooltip: language.cancel_booking,
+          hidden: role === "admin"? false:true,
           disabled: rowData.status==='NEW' || rowData.status==='ACCEPTED'? false:true,
           onClick: (event, rowData) => {
             if(features.AllowCriticalEditsAdmin && (role==='rider' || role ==='admin')){
