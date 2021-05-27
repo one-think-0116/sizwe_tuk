@@ -11,7 +11,7 @@
       "notification": {
         "icon": "./assets/images/logo96x96.png"
       },
-      "version": "1.0.1",
+      "version": "1.0.2",
       "orientation": "portrait",
       "icon": "./assets/images/logo1024x1024.png",
       "splash": {
@@ -53,7 +53,7 @@
       },
       "android": {
         "package": "com.tuk.tuk.company.app",
-        "versionCode": 101,
+        "versionCode": 102,
         "permissions": [
           "CAMERA",
           "READ_EXTERNAL_STORAGE",
