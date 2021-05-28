@@ -186,7 +186,7 @@ export const updateBooking = (booking) => (dispatch) => (firebase) => {
         booking.trip_end_time = end_time.toLocaleTimeString(dateStyle);
         booking.distance = parseFloat(distance).toFixed(2);
         booking.convenience_fees = fare.convenience_fees;
-        booking.driver_share = fare.grandTotal - fare.convenience_fees;
+        booking.driver_share = fare.totalCost - fare.convenience_fees;
         booking.tuktuk_fees = fare.tuktuk_fees;
         booking.fleet_manager_fees = fare.fleet_manager_fees;
         booking.insurance_road_fees = fare.insurance_road_fees;

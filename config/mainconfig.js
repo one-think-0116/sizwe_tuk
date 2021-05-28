@@ -4,7 +4,7 @@ export const MainConfig = {
         app_description: "This is the South Africa taxi componay app.",
         app_identifier: "com.tuk.tuk.company.app",
         ios_app_version: "1.0.1", 
-        android_app_version: 101
+        android_app_version: 103
     },
     FirebaseConfig: {
         apiKey: "AIzaSyDlRIO7LZk2h1daE2A1LJTMQl5-ziJE31M",

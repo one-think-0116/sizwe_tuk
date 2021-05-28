@@ -7,7 +7,7 @@ const language = require('./language.json');
 admin.initializeApp();
 
 const providers = [
-    'payfast',
+    'paystack',
 ]
 
 exports.paypal = require('./providers/paypal');

@@ -47,7 +47,7 @@ export default function PaymentDetails(props) {
     usedWalletMoney: 0,
     promo_applied: false,
     promo_details: null,
-    payableAmmount: booking.trip_cost,
+    payableAmmount:booking.trip_cost,
   });
 
   const useWallet = () => {
