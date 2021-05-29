@@ -47,7 +47,8 @@ const Dashboard = () => {
 
     useEffect(()=>{
         if(usersdata.users){
-            const drivers = usersdata.users.filter(user => user.usertype ==='driver' && ((user.fleetadmin === auth.info.uid && auth.info.profile.usertype === 'fleetadmin')|| auth.info.profile.usertype === 'admin'));  
+            // const drivers = usersdata.users.filter(user => user.usertype ==='driver' && ((user.fleetadmin === auth.info.uid && auth.info.profile.usertype === 'fleetadmin')|| auth.info.profile.usertype === 'admin'));  
+            const drivers = usersdata.users.filter(user => user.usertype ==='driver' && ((auth.info.profile.usertype === 'fleetadmin')|| auth.info.profile.usertype === 'admin'));  
             let locs = [];
             for(let i=0;i<drivers.length;i++){
                 if(drivers[i].approved && drivers[i].driverActiveStatus && drivers[i].location){

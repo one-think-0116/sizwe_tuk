@@ -96,7 +96,7 @@ export default function App() {
       :
       <View style={styles.container}>
         <ImageBackground
-          source={require('./assets/images/intro.png')}
+          source={require('./assets/images/flag.png')}
           resizeMode="stretch"
           style={styles.imagebg}
         >

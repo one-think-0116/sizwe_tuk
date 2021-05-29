@@ -22,7 +22,7 @@ const BookingHistory = () => {
   const columns =  [
       { title: language.booking_id, field: 'id' },
       { title: language.booking_date, field: 'tripdate', render: rowData => rowData.tripdate?new Date(rowData.tripdate).toLocaleString(dateStyle):null},
-      { title: language.car_type, field: 'carType' },
+      { title: language.car_type, field: 'carType'},
       { title: language.customer_name,field: 'customer_name'},
       { title: language.pickup_address, field: 'pickupAddress' },
       { title: language.drop_address, field: 'dropAddress' },

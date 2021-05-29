@@ -26,8 +26,9 @@ export default function Users() {
 
   useEffect(()=>{
     if(usersdata.users){
-        setData(usersdata.users.filter(user => user.usertype ==='driver' && ((user.fleetadmin === auth.info.uid && auth.info.profile.usertype === 'fleetadmin')|| auth.info.profile.usertype === 'admin')));
-    }else{
+        // setData(usersdata.users.filter(user => user.usertype ==='driver' && ((user.fleetadmin === auth.info.uid && auth.info.profile.usertype === 'fleetadmin')|| auth.info.profile.usertype === 'admin')));
+        setData(usersdata.users.filter(user => user.usertype ==='driver' && ((auth.info.profile.usertype === 'fleetadmin')|| auth.info.profile.usertype === 'admin')));
+      }else{
       setData([]);
     }
   },[usersdata.users,auth.info.profile.usertype,auth.info.uid]);
