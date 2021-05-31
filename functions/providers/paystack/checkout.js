@@ -1,5 +1,5 @@
-const PAYSTACK_PUBLIC_KEY = "133";
-const PAYSTACK_SECRET_KEY = "133";
+const PAYSTACK_PUBLIC_KEY = "1335";
+const PAYSTACK_SECRET_KEY = "1335";
 
 var paystack = require('paystack')(PAYSTACK_SECRET_KEY);
 const templateLib = require('./template');
