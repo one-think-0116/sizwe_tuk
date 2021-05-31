@@ -1,7 +1,7 @@
 const templateLib = require('./template');
 
-const PAYFAST_MEWRCHANT_ID = "17545723";
-const PAYFAST_MERCHANT_KEY = 'r351l6pt0ymik';
+const PAYFAST_MEWRCHANT_ID = "";
+const PAYFAST_MERCHANT_KEY = '';
 
 const PAYFAST_CHECKOUT_URL = "https://sandbox.payfast.co.za/eng/process";
 
