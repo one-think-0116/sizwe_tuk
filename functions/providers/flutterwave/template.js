@@ -15,7 +15,7 @@ function getTemplate(payData,server_url,public_key) {
                         tx_ref:"${payData.order_id}",
                         public_key: "${public_key}",
                         amount: ${payData.amount},
-                        currency: "NGN",
+                        currency: "ZAR",
                         redirect_url: "${server_url}/flutterwave-process",
                         customer: {
                             email: "${payData.email}",

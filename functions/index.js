@@ -7,7 +7,7 @@ const language = require('./language.json');
 admin.initializeApp();
 
 const providers = [
-    'paystack',
+    'flutterwave',
 ]
 
 exports.paypal = require('./providers/paypal');
